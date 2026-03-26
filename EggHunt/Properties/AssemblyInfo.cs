@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription( "" )]
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "" )]
-[assembly: AssemblyProduct( "EggHunt" )]
-[assembly: AssemblyCopyright( "Copyright ©  2026" )]
+[assembly: AssemblyProduct( "EggHuntChecker" )]
+[assembly: AssemblyCopyright( "Copyright ©  2026 わっちゃ" )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
