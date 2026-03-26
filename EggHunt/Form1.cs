@@ -32,14 +32,13 @@ namespace EggHunt
             }
 
             bool b = true;
-            int[] init = new int[] { textBox1.Text.ToUpper()[0] - 'A', textBox1.Text.ToUpper()[1] - 'A', textBox1.Text.ToUpper()[2] - 'A' };
             NumericUpDown[] nud = { numericUpDown1, numericUpDown2, numericUpDown3, numericUpDown4, numericUpDown5,
                 numericUpDown6, numericUpDown7, numericUpDown8, numericUpDown9, numericUpDown10,
                 numericUpDown11, numericUpDown12, numericUpDown13, numericUpDown14, numericUpDown15,
                 numericUpDown16, numericUpDown17, numericUpDown18, numericUpDown19, numericUpDown20,
                 numericUpDown21, numericUpDown22, numericUpDown23, numericUpDown24, numericUpDown25, numericUpDown26 };
 
-            checkBox1.Checked = 0 < nud[init[0]].Value && 0 < nud[init[1]].Value && 0 < nud[init[2]].Value;
+            checkBox1.Checked = CBText( textBox1.Text.Substring( 0, 3 ).ToUpper() );
             foreach( int i in Enumerable.Range( 0, 8 ) ) {
                 if( nud[Idx( textBox1.Text.ToUpper()[0] - 'A' + i )].Value == 0 ) {
                     b = false;
